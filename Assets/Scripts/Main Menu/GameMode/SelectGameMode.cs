@@ -6,12 +6,8 @@ public class SelectGameMode : MonoBehaviour
 {
     RaycastHit2D hitinfo;
 
-    string nameGameObject;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+
+    public GameModeInformation gameModeInformation;
 
     // Update is called once per frame
     void Update()
@@ -26,50 +22,12 @@ public class SelectGameMode : MonoBehaviour
             if (hitinfo)
             {
                 // nameGameObject becomes the name of the collided game object
-                nameGameObject = hitinfo.transform.gameObject.name;
-
+                GameModeInformation.gameMode = hitinfo.transform.gameObject.name;
+                gameModeInformation.LoadPuzzel(GameModeInformation.gameMode);
             }
         }
 
-        // this switch case is to ceck which gameObject you touched
-        switch (nameGameObject)
-        {
-            // if you pressed the play button
-            case "Small":
-
-                Debug.Log("een klein leveltje");
-
-                // nameGameObject becomes nothing so this case wont be called again
-                nameGameObject = "";
-                break;
-
-            case "Horizontal":
-                Debug.Log("een platte");
-
-                // nameGameObject becomes nothing so this case wont be called again
-                nameGameObject = "";
-                break;
-
-            case "Vertical":
-                Debug.Log("een lange");
-
-                // nameGameObject becomes nothing so this case wont be called again
-                nameGameObject = "";
-                break;
-
-            case "Big":
-                Debug.Log("een groje");
-
-                // nameGameObject becomes nothing so this case wont be called again
-                nameGameObject = "";
-                break;
-
-            case "Random":
-                Debug.Log("gewoon een, boeit niet echt");
-
-                // nameGameObject becomes nothing so this case wont be called again
-                nameGameObject = "";
-                break;
-        }
+        
+        
     }
 }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameModes : MonoBehaviour
+public class GameModesAnimation : MonoBehaviour
 {
     Animator animator;
 

@@ -57,7 +57,7 @@ public class PlayButton : MonoBehaviour
         yield return new WaitForSeconds(0.6f);
 
         // sets this bool true for playing the aimation
-        GameModes.playGameModeAnimation = true;
+        GameModesAnimation.playGameModeAnimation = true;
     }
 
 
