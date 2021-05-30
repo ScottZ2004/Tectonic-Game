@@ -318,7 +318,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4b2892eae2e6664ba45c9dbe300bb2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameModeInformation: {fileID: 0}
+  gameModeInformation: {fileID: 998220224}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -872,7 +872,6 @@ GameObject:
   m_Component:
   - component: {fileID: 998211740}
   - component: {fileID: 998211741}
-  - component: {fileID: 998211742}
   m_Layer: 0
   m_Name: Play And Game Modes
   m_TagString: Untagged
@@ -915,26 +914,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &998211742
+--- !u!114 &998220224 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 2148028839262149315, guid: 507e43c170448674eb6ab6856eec4368, type: 3}
+  m_PrefabInstance: {fileID: 4998016645179779864}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 998211739}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 80ca1660836205347933313093e6432b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  smallLowRange: 0
-  smallHighRange: 0
-  horizontalLowRange: 0
-  horizontalHighRange: 0
-  verticalLowRange: 0
-  verticalHighRange: 0
-  bigLowRange: 0
-  bigHighRange: 0
 --- !u!1 &1320580232
 GameObject:
   m_ObjectHideFlags: 0
@@ -1314,3 +1304,60 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &4998016645179779864
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 455857081667827421, guid: 507e43c170448674eb6ab6856eec4368, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 229.11209
+      objectReference: {fileID: 0}
+    - target: {fileID: 455857081667827421, guid: 507e43c170448674eb6ab6856eec4368, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 370.50604
+      objectReference: {fileID: 0}
+    - target: {fileID: 455857081667827421, guid: 507e43c170448674eb6ab6856eec4368, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -234.0912
+      objectReference: {fileID: 0}
+    - target: {fileID: 455857081667827421, guid: 507e43c170448674eb6ab6856eec4368, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 455857081667827421, guid: 507e43c170448674eb6ab6856eec4368, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 455857081667827421, guid: 507e43c170448674eb6ab6856eec4368, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 455857081667827421, guid: 507e43c170448674eb6ab6856eec4368, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 455857081667827421, guid: 507e43c170448674eb6ab6856eec4368, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 455857081667827421, guid: 507e43c170448674eb6ab6856eec4368, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 455857081667827421, guid: 507e43c170448674eb6ab6856eec4368, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 455857081667827421, guid: 507e43c170448674eb6ab6856eec4368, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4401048811897669444, guid: 507e43c170448674eb6ab6856eec4368, type: 3}
+      propertyPath: m_Name
+      value: GameModeInformation
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 507e43c170448674eb6ab6856eec4368, type: 3}
